@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    padding: 0px;
+}
+
+.page{
+    margin: 32px 64px;
+}
+
+.myicon img{
+    height: 48px;
+}
