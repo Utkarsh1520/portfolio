@@ -83,3 +83,43 @@ ul{
 .avatar img{
     border-radius: 0px 0px 24px 0px;
 }
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.about h3{
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.about_content{
+    width: 50%;
+    border-radius: 24px;
+    padding: 24px;
+    background: #B8804D;
+    color: white;
+}
+
+.about_content p{
+    color: rgba(255, 255, 255, 0.84);
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about_services{
+    padding: 24px;
+    border-radius: 24px;
+    width: 40%;
+    background-image: url(Resources/Services.svg);
+    background-size: cover;
+}
