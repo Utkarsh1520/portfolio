@@ -11,6 +11,16 @@ body{
     font-family: 'Comfortaa', sans-serif;
 }
 
+@media (max-width: 480px) {
+    .avatar img{
+        width: 100px
+    }
+
+    .tagline h3{
+        font-size: small;
+    }
+}
+
 ul{
     display: flex;
     gap: 64px;
@@ -103,7 +113,7 @@ ul a{
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 32px;
 }
 
 .about_services{
@@ -136,6 +146,7 @@ ul a{
 }
 
 .about_services img{
-    width: 100%;
+    display: flex;
+    justify-content: center;
     margin: auto;
 }
