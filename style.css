@@ -12,12 +12,16 @@ body{
 }
 
 @media (max-width: 480px) {
-    .avatar img{
-        width: 100px
+    body{
+        padding: 0px 16px;
     }
 
-    .tagline h3{
+    .navigation{
         font-size: small;
+    }
+
+    .avatar img{
+        width: 50px;
     }
 }
 
