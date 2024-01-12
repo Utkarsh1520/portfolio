@@ -214,3 +214,51 @@ ul a{
 .project_about button:hover{
     background-color: #f5f5f5;
 }
+
+.project_web3{
+    margin-top: 24px;
+    color: #fff;
+    display: flex;
+    gap: 64px;
+    border-radius: 12px;
+    background: #1C1C27;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_branding{
+    margin-top: 24px;
+    color: #000;
+    display: flex;
+    gap: 64px;
+    border-radius: 12px;
+    background: #FDAFBD;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_payment{
+    margin-top: 24px;
+    color: #fff;
+    display: flex;
+    gap: 64px;
+    border-radius: 12px;
+    background: #6197FF;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_dating{
+    margin-top: 24px;
+    color: #000;
+    display: flex;
+    gap: 64px;
+    border-radius: 12px;
+    background: #FF7676;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
