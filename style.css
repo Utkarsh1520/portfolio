@@ -75,8 +75,8 @@ body{
     background-image: url(Resources/lifeCheckDisplay.svg);
     background-repeat: no-repeat;
     width: 100%;
-    height: 321px;
-    background-size: contain;
+    height: 377px;
+    background-size: cover;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     transition: filter 0.3s;
@@ -91,8 +91,8 @@ body{
     background-image: url(Resources/nftPlatformDisplay.svg);
     background-repeat: no-repeat;
     width: 100%;
-    height: 321px;
-    background-size: contain;
+    height: 377px;
+    background-size: cover;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     transition: filter 0.3s;
@@ -107,8 +107,8 @@ body{
     background-image: url(Resources/zapPayDisplay.svg);
     background-repeat: no-repeat;
     width: 100%;
-    height: 321px;
-    background-size: contain;
+    height: 377px;
+    background-size: cover;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     transition: filter 0.3s;
@@ -123,8 +123,8 @@ body{
     background-image: url(Resources/scaryCreamBrandingDisplay.svg);
     background-repeat: no-repeat;
     width: 100%;
-    height: 321px;
-    background-size: contain;
+    height: 377px;
+    background-size: cover;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     transition: filter 0.3s;
@@ -139,8 +139,8 @@ body{
     background-image: url(Resources/loveFinderDisplay.svg);
     background-repeat: no-repeat;
     width: 100%;
-    height: 321px;
-    background-size: contain;   
+    height: 377px;
+    background-size: cover;   
     grid-column: 1 / span 2;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
@@ -154,6 +154,7 @@ body{
 
 #lifeCheck:hover::after {
     content: "Life Check";
+    padding: 12px;
     position: absolute;
     top: 0;
     left: 0;
