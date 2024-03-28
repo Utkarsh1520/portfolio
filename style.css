@@ -264,3 +264,54 @@ footer p{
     line-height: 28px;
     text-align: justify;
 }
+
+.companies{
+    margin: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mentorkart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.henryharvin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.henryharvin h3{
+    margin-top: -8px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    font-weight: 500;   
+}
+
+.henryharvin p{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-top: -8px; 
+}
+
+.companies h3{
+    margin-top: -8px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.companies p{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-top: -8px;
+}
