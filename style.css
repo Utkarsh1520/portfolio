@@ -1,7 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 body{
+    margin: 0px;
     padding: 0px 64px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+      margin: 0px !important;   
+      padding: 0px 8px !important;
+    }
+
+    .navigation span{
+        display: block !important;
+    }
+
+    #navOptions{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        padding: 12px !important;
+        width: 100%;
+        height: 110vh;
+        z-index: 1;
+        margin-top: 752px !important;
+    }
+
+    .aboutMe{
+        margin-left:24px !important;
+    }
+
+    .aboutMe h1{
+        font-size:32px !important;
+        font-weight: 500;
+        width: 300px !important;
+    }
+
+    .aboutMe h2{
+        font-size: 18px !important;
+        width: 240px !important;
+    }
+
+    .aboutMe p{
+        font-size: 18px !important;
+        width: 320px;
+    }
+
+    .companies{
+        gap: 36px !important;
+    }
+
+    #projects{
+        margin: 24px !important;
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    #lifeCheck {
+        background-size: contain !important;
+        height: 480px !important;
+        background-color: none;
+    }
+
+    .henryharvin{
+        margin-top: 0px;
+    }
+}
+
+.navigation span{
+    display: none;
 }
 
 .navigation{
@@ -74,7 +142,7 @@ body{
 #lifeCheck {
     background-image: url(Resources/lifeCheckDisplay.svg);
     background-repeat: no-repeat;
-    width: 100%;
+    /* width: 100%; */
     height: 377px;
     background-size: cover;
     position: relative;
@@ -85,6 +153,7 @@ body{
     font-family: 'Comfortaa', sans-serif;
     text-decoration: none;
     color: white;
+    transition: linear 100ms ease-in-out;
 }
 
 #nftPlatform {
@@ -162,7 +231,6 @@ body{
     height: 94%;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 18px;
-    transition: tra100ms ease-in-out;
 }
 
 #loveFinder:hover::after {
@@ -259,17 +327,22 @@ footer p{
 }
 
 .content p{
-    width: 50%;
+    width: 70%;
     font-family: 'Comfortaa', sans-serif;
     line-height: 28px;
-    text-align: justify;
+    text-align: center;
 }
 
 .companies{
     margin: 64px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 84px;
+}
+
+.companies p{
+    text-align: center;
 }
 
 .mentorkart{
