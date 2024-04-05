@@ -14,17 +14,34 @@ body{
     .navigation span{
         display: block !important;
     }
-
+/* 
     #navOptions{
-        display: none;
+        display: none !important;
         flex-direction: column;
         position: absolute;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
         padding: 12px !important;
         width: 100%;
-        height: 110vh;
+        height: 100vh;
         z-index: 1;
-        margin-top: 752px !important;
+        margin-top: 8
+        66px !important;
+    } */
+
+    #navOptions {
+        display: none !important;
+        flex-direction: column;
+        position: fixed; /* Use fixed positioning */
+        top: 0; /* Position at the top of the viewport */
+        left: 0; /* Position at the left of the viewport */
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+        padding: 12px !important;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        margin-top: 66px !important;
     }
 
     .aboutMe{
@@ -58,9 +75,32 @@ body{
     }
 
     #lifeCheck {
-        background-size: contain !important;
-        height: 480px !important;
+        background-size: cover;
+        height: 220px !important;
         background-color: none;
+    }
+
+    #nftPlatform{
+        background-size: contain !important;
+        height: 220px !important;
+        background-color: none;  
+    }
+
+    #zapPay{
+        background-size: contain !important;
+        height: 220px !important;
+        background-color: none;     
+    }
+
+    #scaryCream{
+        background-size: contain !important;
+        height: 220px !important;
+        background-color: none;   
+    }
+    #loveFinder{
+        background-size: cover !important;
+        height: 220px !important;
+        background-color: none;   
     }
 
     .henryharvin{
@@ -68,8 +108,12 @@ body{
     }
 }
 
-.navigation span{
+#menu{
     display: none;
+}
+
+.navigation span{
+    display:  one;
 }
 
 .navigation{
