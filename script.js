@@ -3,7 +3,7 @@ const items = document.getElementById('navOptions');
 
 function openMenu(){
     items.style.display='flex';
-    console.log('suc'/n);
+    console.log('suc');
 }
 
 menu.addEventListener('click', openMenu);

@@ -2,7 +2,7 @@
 
 body{
     margin: 0px;
-    padding: 0px 64px;
+    /* padding: 0px 64px; */
 }
 
 @media screen and (max-width: 480px) {
@@ -14,34 +14,13 @@ body{
     .navigation span{
         display: block !important;
     }
-/* 
-    #navOptions{
-        display: none !important;
-        flex-direction: column;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(10px);
-        padding: 12px !important;
-        width: 100%;
-        height: 100vh;
-        z-index: 1;
-        margin-top: 8
-        66px !important;
-    } */
 
-    #navOptions {
-        display: none !important;
-        flex-direction: column;
-        position: fixed; /* Use fixed positioning */
-        top: 0; /* Position at the top of the viewport */
-        left: 0; /* Position at the left of the viewport */
-        background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(10px);
-        padding: 12px !important;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        margin-top: 66px !important;
+    .footer{
+        font-size: 14px !important;
+    }
+
+    #socials {
+        font-size: 14px !important;
     }
 
     .aboutMe{
@@ -73,39 +52,6 @@ body{
         display: flex !important;
         flex-direction: column;
     }
-
-    #lifeCheck {
-        background-size: cover;
-        height: 220px !important;
-        background-color: none;
-    }
-
-    #nftPlatform{
-        background-size: contain !important;
-        height: 220px !important;
-        background-color: none;  
-    }
-
-    #zapPay{
-        background-size: contain !important;
-        height: 220px !important;
-        background-color: none;     
-    }
-
-    #scaryCream{
-        background-size: contain !important;
-        height: 220px !important;
-        background-color: none;   
-    }
-    #loveFinder{
-        background-size: cover !important;
-        height: 220px !important;
-        background-color: none;   
-    }
-
-    .henryharvin{
-        margin-top: 0px;
-    }
 }
 
 #menu{
@@ -117,7 +63,7 @@ body{
 }
 
 .navigation{
-    margin-top: 24px;
+    margin: 36px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,12 +82,27 @@ body{
     color: black;
 }
 
+#backOption a{
+    color: #000;
+    font-size: 14px;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: linear ease-in 100ms;
+}
+
 #navOptions a{
     color: #000;
     font-size: 14px;
     opacity: 0.8;
     text-decoration: none;
     transition: linear ease-in 100ms;
+}
+
+#backOption a:hover{
+    text-decoration: underline;
+    opacity: 1;
+    font-weight: 800;
+    transition: linear ease-in 10ms; 
 }
 
 #navOptions a:hover{
@@ -174,158 +135,78 @@ body{
     opacity: 0.6;
 }
 
-#projects{
-    margin: 64px 64px 64px 64px;
-    padding: 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+#Projects{
+    margin-top: 84px;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
 }
 
-#lifeCheck {
-    background-image: url(Resources/lifeCheckDisplay.svg);
-    background-repeat: no-repeat;
-    /* width: 100%; */
-    height: 377px;
-    background-size: cover;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: filter 0.3s;
-    border-radius: 16px;
-    font-size: 20px;
+#Projects a{
+    font-size: 18px;
+    color: white;
     font-family: 'Comfortaa', sans-serif;
     text-decoration: none;
-    color: white;
-    transition: linear 100ms ease-in-out;
-}
-
-#nftPlatform {
-    background-image: url(Resources/nftPlatformDisplay.svg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 377px;
-    background-size: cover;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: filter 0.3s;
-    border-radius: 16px;
-    font-size: 20px;
-    font-family: 'Comfortaa', sans-serif;
-    text-decoration: none;
-    color: white;
-}
-
-#zapPay{
-    background-image: url(Resources/zapPayDisplay.svg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 377px;
-    background-size: cover;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: filter 0.3s;
-    border-radius: 16px;
-    font-size: 20px;
-    font-family: 'Comfortaa', sans-serif;
-    text-decoration: none;
-    color: white;
-}
-
-#scaryCream{
-    background-image: url(Resources/scaryCreamBrandingDisplay.svg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 377px;
-    background-size: cover;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: filter 0.3s;
-    border-radius: 16px;
-    font-size: 20px;
-    font-family: 'Comfortaa', sans-serif;
-    text-decoration: none;
-    color: white;
 }
 
 #loveFinder{
-    background-image: url(Resources/loveFinderDisplay.svg);
+    display:block;
+    background: url(Resources/loveFinderDisplay.svg);
+    list-style: none;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 377px;
-    background-size: cover;   
-    grid-column: 1 / span 2;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: filter 0.3s;
-    border-radius: 16px;
-    font-size: 20px;
-    font-family: 'Comfortaa', sans-serif;
-    text-decoration: none;
-    color: white;
+    height: 408px;
+    content: none;
 }
 
-#lifeCheck:hover::after {
-    content: "Life Check";
-    padding: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 96%;
-    height: 94%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 18px;
+#zapPay{
+    display:block ;
+    background: url(Resources/zapPayDisplay.svg);
+    list-style: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 408px;
+    content: none; 
 }
 
-#loveFinder:hover::after {
-    content: "Love Finder";
-    padding: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 98%;
-    height: 94%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 18px;
+#scaryCream{
+    display:block ;
+    background: url(Resources/scaryCreamBrandingDisplay.svg);
+    list-style: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 408px;
+    content: none; 
 }
 
-#scaryCream:hover::after {
-    content: "Scary Cream(Branding & Packaging)";
-    position: absolute;
-    padding: 12px;
-    top: 0;
-    left: 0;
-    width: 96%;
-    height: 94%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 18px;
+#nftPlatform{
+    display:block ;
+    background: url(Resources/nftPlatformDisplay.svg);
+    list-style: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 408px;
+    content: none; 
 }
 
-#zapPay:hover::after {
-    content: "ZapPay";
-    position: absolute;
-    padding: 12px;
-    top: 0;
-    left: 0;
-    width: 96%;
-    height: 94%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 18px;
-}
-
-#nftPlatform:hover::after {
-    content: "NFT Platform";
-    position: absolute;
-    padding: 12px;
-    top: 0;
-    left: 0;
-    width: 96%;
-    height: 94%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 18px;
+#lifeCheck{
+    display:block ;
+    background: url(Resources/lifeCheckDisplay.svg);
+    list-style: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 408px;
+    content: none; 
 }
 
 footer{
+    margin: 36px;
     display: flex;
     justify-content: space-between;
 }
