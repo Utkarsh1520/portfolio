@@ -2,7 +2,7 @@ const menu = document.getElementById('menu');
 const items = document.getElementById('navOptions');
 
 function openMenu(){
-    items.style.display='flex';
+    items.style.display='block';
     console.log('suc');
 }
 

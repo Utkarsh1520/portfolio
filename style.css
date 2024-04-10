@@ -18,7 +18,7 @@ body{
 
     .navigation span{
         display: block !important;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     .footer{
@@ -70,18 +70,19 @@ body{
     }
 
     #navOptions{
+        display: none;
         flex-direction: column;
         position:absolute;
         background-color: white;
         z-index: 2;
-        border: 1px solid;
+        /* border: 1px solid; */
         display: flex;
-        margin-top: 164px;
+        margin-top: 196px;
         width: 50%;
         margin-left: 164px !important;
-        border-radius: 12px;
+        border-radius: 8px;
         padding: 12px !important;
-        backdrop-filter: drop-shadow(5px 5px 10px #000000);
+        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3)) !important;
         background-color: white;
     }
 }
