@@ -16,9 +16,8 @@ body{
         margin: 0px !important;
     }
 
-    .navigation span{
-        display: block !important;
-        /* border: 1px solid red; */
+    #menu{
+        display: block;
     }
 
     .footer{
@@ -69,21 +68,36 @@ body{
         width: 100% !important;
     }
 
+    .navigation button{
+        display: block !important;
+    }
+
     #navOptions{
-        display: none;
+        display: none !important;
         flex-direction: column;
-        position:absolute;
-        background-color: white;
+        position: absolute;
         z-index: 2;
         /* border: 1px solid; */
-        display: flex;
-        margin-top: 196px;
-        width: 50%;
-        margin-left: 164px !important;
+        margin-top: 264px;
+        width: 90%;
         border-radius: 8px;
         padding: 12px !important;
         filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3)) !important;
         background-color: white;
+    }
+
+    footer{
+        margin: 2px !important;
+        flex-direction: column-reverse !important;
+        align-items: center;
+    }
+
+    footer p{
+        font-size: 12px !important;
+    }
+
+    .socialIcons a{
+        width: 30%;
     }
 }
 
