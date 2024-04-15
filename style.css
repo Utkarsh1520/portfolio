@@ -12,12 +12,38 @@ body{
       padding: 0px 8px !important;
     }
 
-    .navigation{
-        margin: 0px !important;
+    nav{
+        padding: 12px !important;
     }
 
-    #menu{
-        display: block;
+    #menuIcon{
+        display: block !important;
+    }
+
+    #closeIcon{
+        display: block !important;
+    }
+
+    nav ul{
+        display: none;
+        gap: 24px;
+        margin-left: 120px;
+        margin-top: 874px;
+        height: 100vh;
+        z-index: 999;
+        position:fixed;
+        padding: 16px 16px;
+        width: 240px;
+        /* height: 100vh; */
+        background-color: white;
+        filter: drop-shadow(-6px 0px 36px rgba(0, 0, 0, 0.2));
+        transition: linear ease-in-out 0.25ms;
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+
+    nav ul a{
+        margin-left: 0px !important;
     }
 
     .footer{
@@ -52,6 +78,10 @@ body{
         gap: 36px !important;
     }
 
+    #Projects{
+        padding: 8px !important;
+    }
+
     #zapPay{
         width: 100% !important;
     }
@@ -66,24 +96,6 @@ body{
 
     #lifeCheck{
         width: 100% !important;
-    }
-
-    .navigation button{
-        display: block !important;
-    }
-
-    #navOptions{
-        display: none !important;
-        flex-direction: column;
-        position: absolute;
-        z-index: 2;
-        /* border: 1px solid; */
-        margin-top: 264px;
-        width: 90%;
-        border-radius: 8px;
-        padding: 12px !important;
-        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3)) !important;
-        background-color: white;
     }
 
     footer{
@@ -101,62 +113,51 @@ body{
     }
 }
 
-#menu{
+nav{
+    /* border: 1px solid red; */
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 64px;
+}
+
+#menuIcon{
     display: none;
 }
 
-.navigation span{
-    display:  one;
+#closeIcon{
+    display: none;
 }
 
-.navigation{
-    margin: 36px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#back{
+    color: #000;
+    margin-left: 24px;
     font-family: 'Comfortaa', sans-serif;
-}
-
-.navigation img{
-    width: 100px;
-}
-
-#navOptions{
-    display: flex;
-    gap: 36px;
-    padding: 0px;
-    cursor: pointer;
-    color: black;
-}
-
-#backOption a{
-    color: #000;
     font-size: 14px;
     opacity: 0.8;
     text-decoration: none;
-    transition: linear ease-in 100ms;
+    transition: linear ease-in 100ms;    
 }
 
-#navOptions a{
+nav ul a{
     color: #000;
+    margin-left: 24px;
+    font-family: 'Comfortaa', sans-serif;
     font-size: 14px;
     opacity: 0.8;
     text-decoration: none;
-    transition: linear ease-in 100ms;
+    transition: linear ease-in 100ms;  
 }
 
-#backOption a:hover{
-    text-decoration: underline;
-    opacity: 1;
-    font-weight: 800;
-    transition: linear ease-in 10ms; 
+nav ul a:hover{
+    color: darkslategrey;
+    transition: linear 0.05ms;
 }
 
-#navOptions a:hover{
-    text-decoration: underline;
-    opacity: 1;
-    font-weight: 800;
-    transition: linear ease-in 10ms;
+#back:hover{
+    color: darkslategrey;
+    transition: linear 0.05ms;
 }
 
 .aboutMe{
@@ -183,11 +184,11 @@ body{
 }
 
 #Projects{
+    padding: 24px 64px;
     margin-top: 84px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    padding: 0px;
 }
 
 #Projects a{
@@ -253,7 +254,7 @@ body{
 }
 
 footer{
-    margin: 36px;
+    margin: 0px 64px;
     display: flex;
     justify-content: space-between;
 }

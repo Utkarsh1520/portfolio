@@ -1,9 +1,14 @@
-const menu = document.getElementById('menu');
-const items = document.getElementById('navOptions');
+const menu = document.getElementById('navigationOptions');
+const menuActionOption =  document.getElementById('menuIcon');
+const closeMenuAction = document.getElementById('closeIcon');
 
-function openMenu(){
-    items.style.display='block';
+function displaySideDrawer(){
     console.log('suc');
+    menu.style.display='flex';
 }
 
-menu.addEventListener('click', openMenu);
+function closeSideDrawer(){
+    menu.style.display='none';
+}
+
+// menuActionOption.addEventListener('onclick',displaySideDrawer());
