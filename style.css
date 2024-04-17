@@ -27,19 +27,26 @@ body{
     nav ul{
         display: none;
         gap: 24px;
-        margin-left: 120px;
-        margin-top: 874px;
-        height: 100vh;
+        /* margin-top: 104px; */
+        margin-top: -100vh;
+        border-radius: 8px;
+        /* height: 100vh; */
         z-index: 999;
         position:fixed;
         padding: 16px 16px;
-        width: 240px;
+        width: 84%;
         /* height: 100vh; */
         background-color: white;
         filter: drop-shadow(-6px 0px 36px rgba(0, 0, 0, 0.2));
-        transition: linear ease-in-out 0.25ms;
+        /* transition: linear ease-in-out 0.25ms; */
+        /* transition: linear ease-in 50s; */
+        transition: margin-top 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         flex-direction: column;
         /* border: 1px solid black; */
+    }
+
+    nav.active ul {
+        margin-top: 104px; /* Move in from the top */
     }
 
     nav ul a{
@@ -75,27 +82,36 @@ body{
     }
 
     .companies{
-        gap: 36px !important;
+        margin: 36px !important;
+        gap: 24px !important;
     }
 
     #Projects{
         padding: 8px !important;
     }
 
+    #loveFinder{
+        background-image: url(Resources/loveFinderMobile.png) !important;
+    }
+
     #zapPay{
         width: 100% !important;
+        background-image: url(Resources/zapPayMobile.png) !important;
     }
 
     #scaryCream{
         width: 100% !important;
+        background-image: url(Resources/scaryCreamMobile.png) !important;
     }
 
     #nftPlatform{
         width: 100% !important;
+        background-image: url(Resources/nftPlatformMobile.png) !important;
     }
 
     #lifeCheck{
         width: 100% !important;
+        background-image: url(Resources/lifeCheckMobile.png) !important;
     }
 
     footer{
@@ -200,7 +216,7 @@ nav ul a:hover{
 
 #loveFinder{
     display:block;
-    background: url(Resources/loveFinderDisplay.svg);
+    background: url(Resources/loveFinderDisplay.png);
     list-style: none;
     background-repeat: no-repeat;
     background-size: cover;
@@ -211,7 +227,7 @@ nav ul a:hover{
 
 #zapPay{
     display:block ;
-    background: url(Resources/zapPayDisplay.svg);
+    background: url(Resources/zapPayDisplay.png);
     list-style: none;
     background-repeat: no-repeat;
     background-size: cover;
@@ -222,7 +238,7 @@ nav ul a:hover{
 
 #scaryCream{
     display:block ;
-    background: url(Resources/scaryCreamBrandingDisplay.svg);
+    background: url(Resources/scaryCreamDisplay.png);
     list-style: none;
     background-repeat: no-repeat;
     background-size: cover;
@@ -233,7 +249,7 @@ nav ul a:hover{
 
 #nftPlatform{
     display:block ;
-    background: url(Resources/nftPlatformDisplay.svg);
+    background: url(Resources/nftPlatformDisplay.png);
     list-style: none;
     background-repeat: no-repeat;
     background-size: cover;
@@ -244,7 +260,7 @@ nav ul a:hover{
 
 #lifeCheck{
     display:block ;
-    background: url(Resources/lifeCheckDisplay.svg);
+    background: url(Resources/lifeCheckDisplay.png);
     list-style: none;
     background-repeat: no-repeat;
     background-size: cover;

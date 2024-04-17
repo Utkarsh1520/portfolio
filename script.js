@@ -5,6 +5,7 @@ const closeMenuAction = document.getElementById('closeIcon');
 function displaySideDrawer(){
     console.log('suc');
     menu.style.display='flex';
+    document.querySelector('nav').classList.toggle('active');
 }
 
 function closeSideDrawer(){
