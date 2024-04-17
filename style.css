@@ -27,26 +27,18 @@ body{
     nav ul{
         display: none;
         gap: 24px;
-        /* margin-top: 104px; */
-        margin-top: -100vh;
+        margin-top: 104px;
         border-radius: 8px;
         /* height: 100vh; */
         z-index: 999;
         position:fixed;
         padding: 16px 16px;
-        width: 84%;
+        width: 83%;
         /* height: 100vh; */
         background-color: white;
         filter: drop-shadow(-6px 0px 36px rgba(0, 0, 0, 0.2));
-        /* transition: linear ease-in-out 0.25ms; */
-        /* transition: linear ease-in 50s; */
-        transition: margin-top 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         flex-direction: column;
         /* border: 1px solid black; */
-    }
-
-    nav.active ul {
-        margin-top: 104px; /* Move in from the top */
     }
 
     nav ul a{
