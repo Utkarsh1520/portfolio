@@ -1,6 +1,15 @@
 const menu = document.getElementById('navigationOptions');
 const menuActionOption =  document.getElementById('menuIcon');
 const closeMenuAction = document.getElementById('closeIcon');
+const model = document.getElementById('redirectModelDummy');
+
+function openModel(){
+    model.style.display='flex';
+}
+
+function closeModel(){
+    model.style.display='none';
+}
 
 function displaySideDrawer(){
     console.log('suc');

@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
 </head>
 <body>
+    <div onclick="closeModel()" id="redirectModelDummy" class="darkOverlay">
+        <div class="redirectModel">
+            <img id="coffeeDummy" src="Resources/Coffee.png">
+            <p>The case studies and projects are still under development stage. Until then you can check out my Social Profiles for my works.</p>
+            <div class="colorSocials">
+                <img src="Resources/behanceColor.svg">
+                <img src="Resources/dribbleColor.svg">
+            </div>
+        </div>        
+    </div>
     <nav>
         <img src="Resources/myLogodark.svg" href="index.html">
         <ul id="navigationOptions">
@@ -29,11 +39,11 @@
             <h2>Enhancing experiences</h2>
     </div>
     <ul id="Projects">
-            <a id="loveFinder" href="" target="_blank"></a>
-            <a id="zapPay" href="" target="_blank"></a>
-            <a id="scaryCream" href="" target="_blank"></a>
-            <a id="nftPlatform" href="" target="_blank"></a>
-            <a id="lifeCheck" href="" target="_blank"></a>
+            <a id="loveFinder" onclick="openModel()"></a>
+            <a id="zapPay" onclick="openModel()"></a>
+            <a id="scaryCream" onclick="openModel()"></a>
+            <a id="nftPlatform" onclick="openModel()"></a>
+            <a id="lifeCheck" onclick="openModel()"></a>
     </ul>
     <footer>
         <p>© 2024 Utkarsh</p>

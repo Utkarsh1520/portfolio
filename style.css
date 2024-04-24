@@ -5,11 +5,38 @@ body{
     /* padding: 0px 64px; */
 }
 
+@media screen and (max-width: 816px){
+    #loveFinder{
+        background-image: url(Resources/loveFinderMobile.png) !important;
+    }
+
+    #zapPay{
+        width: 100% !important;
+        background-image: url(Resources/zapPayMobile.png) !important;
+    }
+
+    #scaryCream{
+        width: 100% !important;
+        background-image: url(Resources/scaryCreamMobile.png) !important;
+    }
+
+    #nftPlatform{
+        width: 100% !important;
+        background-image: url(Resources/nftPlatformMobile.png) !important;
+    }
+
+    #lifeCheck{
+        width: 100% !important;
+        background-image: url(Resources/lifeCheckMobile.png) !important;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
     
     body {
-      margin: 0px !important;   
-      padding: 0px 8px !important;
+      margin: 0px !important;
+      /* padding: 0px 8px !important; */
     }
 
     nav{
@@ -33,7 +60,7 @@ body{
         z-index: 999;
         position:fixed;
         padding: 16px 16px;
-        width: 83%;
+        width: 86%;
         /* height: 100vh; */
         background-color: white;
         filter: drop-shadow(-6px 0px 36px rgba(0, 0, 0, 0.2));
@@ -118,6 +145,10 @@ body{
 
     .socialIcons a{
         width: 30%;
+    }
+
+    .redirectModel{
+        width: 70% !important;
     }
 }
 
@@ -368,4 +399,55 @@ footer p{
     font-weight: 500;
     opacity: 0.8;
     margin-top: -8px;
+}
+
+.darkOverlay{
+    display: none;
+    z-index: 999;
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+#modelCloseIcon{
+    margin:auto
+}
+
+.redirectModel{
+    /* position: absolute; */
+    display: flex;
+    padding: 16px;
+    border-radius: 12px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redirectModel{
+    background-color: white;
+    width: 30%;
+    position: absolute;
+}
+
+.redirectModel p{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.colorSocials{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+#coffeeDummy{
+    width: 52%;
+}
+
+.colorSocials img{
+    width: 28%;
 }
